@@ -1,0 +1,393 @@
+{
+  "search_metadata": {
+    "id": "691935eaf2593abd6599e66b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/19a686d5c0850b8d/691935eaf2593abd6599e66b.json",
+    "created_at": "2025-11-16 02:24:42 UTC",
+    "processed_at": "2025-11-16 02:24:42 UTC",
+    "google_url": "https://www.google.com/search?q=vet+clinic&oq=vet+clinic&uule=w+CAIQICIbVHJveSxOZXcgWW9yayxVbml0ZWQgU3RhdGVz&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/19a686d5c0850b8d/691935eaf2593abd6599e66b.html",
+    "total_time_taken": 1.29
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "vet clinic",
+    "location_requested": "Troy, New York, United States",
+    "location_used": "Troy,New York,United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "vet clinic",
+    "total_results": 154000000,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "local_map": {
+    "image": "https://www.google.com/maps/vt/data=-fEe4mcHs85BT2s5j8YJC_U3hGHloGgSiBc6GbhW57rClqlJDuv4pPXoS6C25A9nfP_Dgbpxdt2ve97yXJqp_FZHvzJ3jcfi9e8fIvc2PdxbwynaZrn5UyPTLzDku3r6UK2ca7zv6yVsY943lR1QyfFp8lwGbN2HWMS9Tzzj2ITR9m6dTwmwnTMKSi23RH9FBuSGjTH37E-aOslR_g_1Fdw9Ghu0bR0ZdmZi7r5r1cLyy3w_9WVMSLxOBaooiE11W5OXiAi3vQNYafAl5RROEz2tz0g5JlYztQLZMeTeZVt5zjwtz9JciTWNqM90wvp9e2dYdbf6X-vHQ0Lj2Oy14pk-NRwB4uVGMCYlDhsDr-TL1zc333OLT9vAcYfv_C9o8r7lPhNuf4e661Ge9pSIhLDKF0SuTtTtwuA9eR-rlvl4VY_XJPUmhoXFuBlFj2aW2BPbuFIZBfxCHa5JDAi_j5EoMqo0MlwcKRgbVUZ5BGXbK-xkOeMJaJVNIgYzo5tN-eCN3fQx0XpgcXPShgjlq9vM3ItVd_w3sFn4Zt-EbO9Pk68D8biuzRMpqyRXIcZ69ijsTS4lw1gW-Hd8Vk9fXB2x7hsplD5V5cIn1tiKeN5y8g5ma5_jdxQddtFPigHr4-ftdIxRlf6AzBPQdnwtrhXBGlWLIBNVisR9FXg_0cEiMd5DODgavws56BCUxhV__NaUhdMA58Hxj7Tl8d6oxhQFxI13eQ8llULf2a4vbhIijO4czPJXVnlTdpTyZ9Gowycv8vbK8rhTg27ovVaI05AW4lszuSk-Ov0OGIXRiftJoOnabFwRARHyY4kOU3pSL-pGeFr85WK3QpPmIYAk6p4WUktgoosNHBxDGNpuEH4hXg7FXGXuWjdiaEk-9tsLbsvZG2gohuoUaR1I4ZukDfUH0LbUOaZX7cXqlhmf3E1rOaWBlsInJlwpcHZd8XCBBBsK7SJL0hKHpMO1TLmb7biBnSI4chmmePQxM134f8uRCKhMdKxDhnKlkm217YePAAfv-NBJC-n9ojBmHpO5lnAOQ_Rg_iAkWJhU3rruIMFxtcNYVIjAvVdm7VMpEBcYAhGb7RKuQQfRbQsfcQJPh5xNHgYvgHnQWtCGK5j87AYN_2-xTCDwuTKQg510nap-jDkHmKPnKcZ9EErPZ2H0sE0WDU9C0f-whzV5YssVR55InHaY30rZaQPnagUfqIVzxo2jReM6WGNn0kZBPcYgnqB45TP4YBu9MB0lwZdUZmsIM7csa1d6sQkc467FJWH9VG_5Z51NIT_rWnGYH5rafs6dTwpj8a8Wb58n9OTyLVw5Nw-ret0fJtb46lAAqqQCnbAcsAAQp_G7Gn6fx30ULSBaiRVmMi8q2_Eg_mqYAmjMTfoqTOq2jhBJUIZqxBkCj-xgZh37Qtd7sSoUVUWnIlSlEDm0eBv3r2vUKLYmSrSM5w",
+    "gps_coordinates": {
+      "latitude": 42.71675018,
+      "longitude": -73.72238159
+    }
+  },
+  "local_results": {
+    "places": [
+      {
+        "position": 1,
+        "rating": 4.3,
+        "reviews": 1300,
+        "reviews_original": "(1.3K)",
+        "description": "\"diagnosis was made after a thorough evaluation, and treatment plan was made.\"",
+        "lsig": "AB86z5WekkcbtcEvCId4aFt36gAK",
+        "links": {
+          "website": "https://www.capitaldistrictvet.com/?utm_source=gmb&utm_medium=organic&y_source=1_MTAxNzQxNzU1Ny03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+          "directions": "https://www.google.com/maps/dir//Capital+District+Veterinary+Referral+Hospital,+222+Troy-Schenectady+Rd,+Latham,+NY+12110/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89de0e62dd55ad85:0xdff5fc7a34b4a5ab?sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ48ADegQIKhAA&hl=en&gl=us"
+        },
+        "place_id": "16138082441552504235",
+        "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&ludocid=16138082441552504235&q=vet+clinic",
+        "gps_coordinates": {
+          "latitude": 42.740067,
+          "longitude": -73.7382
+        },
+        "title": "Capital District Veterinary Referral Hospital",
+        "type": "Veterinarian",
+        "years_in_business": "10+ years in business",
+        "address": "Latham, NY",
+        "phone": "(518) 785-1094",
+        "hours": "Open 24 hours"
+      },
+      {
+        "position": 2,
+        "rating": 4.2,
+        "reviews": 1100,
+        "reviews_original": "(1.1K)",
+        "description": "\"The medical staff were knowledgeable, communicative, and transparent.\"",
+        "lsig": "AB86z5VMBEqSb8reUwrbRCv86Vg-",
+        "links": {
+          "website": "http://www.uvsonline.com/",
+          "directions": "https://www.google.com/maps/dir//Upstate+Veterinary+Specialties,+152+Sparrowbush+Rd,+Latham,+NY+12110/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89de0e62dd55ad85:0xeb2fe0881c882988?sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ48ADegQIKBAA&hl=en&gl=us"
+        },
+        "place_id": "16947010798017325448",
+        "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&ludocid=16947010798017325448&q=vet+clinic",
+        "gps_coordinates": {
+          "latitude": 42.75949,
+          "longitude": -73.76166
+        },
+        "title": "Upstate Veterinary Specialties",
+        "type": "Veterinarian",
+        "years_in_business": "10+ years in business",
+        "address": "Latham, NY",
+        "phone": "(518) 783-3198",
+        "hours": "Open 24 hours"
+      },
+      {
+        "position": 3,
+        "rating": 4.3,
+        "reviews": 685,
+        "reviews_original": "(685)",
+        "description": "\"Caring, affordable and competent\"",
+        "lsig": "AB86z5VeOv2w3HT8MtCUFJNAwF8W",
+        "links": {
+          "directions": "https://www.google.com/maps/dir//Oakwood+Veterinary+Clinic,+205+Oakwood+Ave,+Troy,+NY+12182/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89de0fef7985b2e1:0x9bc46f9d77e6bcde?sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ48ADegQIKRAA&hl=en&gl=us"
+        },
+        "place_id": "11224218893426277598",
+        "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&ludocid=11224218893426277598&q=vet+clinic",
+        "gps_coordinates": {
+          "latitude": 42.75552,
+          "longitude": -73.66875
+        },
+        "title": "Oakwood Veterinary Clinic",
+        "type": "Veterinarian",
+        "years_in_business": "10+ years in business",
+        "address": "205 Oakwood Ave",
+        "phone": "(518) 874-1718",
+        "hours": "Closed · Opens 8 AM Mon"
+      }
+    ],
+    "more_locations_link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&tbm=lcl&q=vet+clinic&rflfq=1&num=10&uule=w+CAIQICIbVHJveSxOZXcgWW9yayxVbml0ZWQgU3RhdGVz&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQjGp6BAgyEAA"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Troy Veterinary Hospital: Best Vet Hospital In Troy, NY",
+      "link": "https://troyvet.net/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://troyvet.net/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECB4QAQ",
+      "displayed_link": "https://troyvet.net",
+      "snippet": "We offer a wide range of services, from routine vaccinations and check-ups to more complex medical and surgical procedures. We also offer boarding and grooming ...",
+      "snippet_highlighted_words": [
+        "routine vaccinations and check-ups"
+      ],
+      "source": "Troy Veterinary Hospital"
+    },
+    {
+      "position": 2,
+      "title": "THE BEST 10 VETERINARIANS in TROY, NY",
+      "link": "https://www.yelp.com/search?cflt=vet&find_loc=Troy%2C+NY",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.yelp.com/search%3Fcflt%3Dvet%26find_loc%3DTroy%252C%2BNY&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECCQQAQ",
+      "displayed_link": "https://www.yelp.com › Pets › Veterinarians",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b855c5dc545a04e797300e74482003e75a.png",
+      "snippet": "1. Troy Veterinary Hospital · 2.2 mi · 840 Hoosick Rd, Troy, NY 12180. (518) 279-4668 ; 2. Brunswick Veterinary Hospital · 6.0 mi · 1632 Ny 7, Troy, NY 12180. (518) ...",
+      "snippet_highlighted_words": [
+        "840 Hoosick Rd, Troy, NY 12180"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4,
+            "reviews": 1456
+          },
+          "extensions": [
+            "4.0(1,456)"
+          ]
+        }
+      },
+      "source": "Yelp"
+    },
+    {
+      "position": 3,
+      "title": "Miller Animal Hospital: Troy, NY Veterinarian",
+      "link": "https://www.millerah.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.millerah.com/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECCEQAQ",
+      "displayed_link": "https://www.millerah.com",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b87aec508375927f19fea477a3fc6c498c.png",
+      "snippet": "Miller Animal Hospital offers Wellness, Laser Therapy, Dental Care, Surgery, on-site Diagnostics, and a full-service pharmacy.",
+      "snippet_highlighted_words": [
+        "Animal Hospital"
+      ],
+      "source": "Miller Animal Hospital"
+    },
+    {
+      "position": 4,
+      "title": "PetVet Vaccination Clinic - VIP Petcare",
+      "link": "http://locations.petvet.vippetcare.com/ny/troy/864-hoosick-rd/2044/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://locations.petvet.vippetcare.com/ny/troy/864-hoosick-rd/2044/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECGAQAQ",
+      "displayed_link": "http://locations.petvet.vippetcare.com › 864-hoosick-rd",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b8a602997d14849424e54b140aefea7c4a.png",
+      "snippet": "Discover expert veterinary services for dogs, along with preventive care, non-emergency vet services, and shot clinics at PetVet in Troy, NY.",
+      "snippet_highlighted_words": [
+        "expert veterinary services for dogs"
+      ],
+      "source": "VIP Petcare"
+    },
+    {
+      "position": 5,
+      "title": "Oakwood Veterinary Clinic | Troy NY",
+      "link": "https://www.facebook.com/OakwoodVeterinaryClinic/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https::/www.facebook.com/OakwoodVeterinaryClinic/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECFAQAQ",
+      "displayed_link": "2.4K+ followers",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b8bdaa371472ea6de8ef68eccd04378712.png",
+      "snippet": "Oakwood Veterinary Clinic, Troy. 2366 likes · 84 talking about this · 1439 were here. The Oakwood Veterinary Clinic in Troy NY serves clients and their...",
+      "snippet_highlighted_words": [
+        "Oakwood Veterinary Clinic, Troy"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 3.8,
+            "reviews": 101
+          },
+          "extensions": [
+            "3.8(101)"
+          ]
+        }
+      },
+      "source": "Facebook · Oakwood Veterinary Clinic"
+    },
+    {
+      "position": 6,
+      "title": "Vet Near Me Troy, NY 12180",
+      "link": "https://troyvet.net/contact/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://troyvet.net/contact/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECFEQAQ",
+      "displayed_link": "https://troyvet.net › contact",
+      "snippet": "Troy Veterinary Hospital is located at 840 Hoosick Road, Troy, NY 12180. Phone: 518-279-4668, Email: info@troyvet.net.",
+      "snippet_highlighted_words": [
+        "840 Hoosick Road, Troy, NY 12180"
+      ],
+      "source": "Troy Veterinary Hospital"
+    },
+    {
+      "position": 7,
+      "title": "Brunswick Veterinary Hospital: Top Rated Troy Veterinarian",
+      "link": "https://www.brunswickveterinaryhospital.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.brunswickveterinaryhospital.com/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECE0QAQ",
+      "displayed_link": "https://www.brunswickveterinaryhospital.com",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b8419fb5c9e9595980d6b7c09072530011.png",
+      "snippet": "Brunswick Veterinary Hospital offers cat and dog services, surgical, wellness, and specialized care including acupuncture, laser therapy, and care for various ...",
+      "snippet_highlighted_words": [
+        "Brunswick Veterinary Hospital"
+      ],
+      "source": "Brunswick Veterinary Hospital"
+    },
+    {
+      "position": 8,
+      "title": "Collar City Animal Hospital 499 2nd Avenue Troy, NY 12182",
+      "link": "https://www.collarcity.vet/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.collarcity.vet/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECFUQAQ",
+      "displayed_link": "https://www.collarcity.vet",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b84f9b488ff1a29e615a66cd0bea783ea8.png",
+      "snippet": "Collar City Animal Hospital is at 499 2nd Ave, Troy, NY, open Mon-Wed 8am-5pm, Tue & Thu 8am-7pm, closed Fri-Sun. They provide high standard care.",
+      "snippet_highlighted_words": [
+        "499 2nd Ave, Troy, NY"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Contact",
+            "link": "https://www.collarcity.vet/contact/"
+          },
+          {
+            "title": "Reviews",
+            "link": "https://www.collarcity.vet/reviews/"
+          },
+          {
+            "title": "About us",
+            "link": "https://www.collarcity.vet/about-us/"
+          },
+          {
+            "title": "Accessibility",
+            "link": "https://www.collarcity.vet/accessibility/"
+          }
+        ]
+      },
+      "source": "Collar City Animal Hospital"
+    },
+    {
+      "position": 9,
+      "title": "Just Cats Veterinary Clinic",
+      "link": "https://www.justcatsvet.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.justcatsvet.com/&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQFnoECFQQAQ",
+      "displayed_link": "https://www.justcatsvet.com",
+      "favicon": "https://serpapi.com/searches/691935eaf2593abd6599e66b/images/1fd55817a391d71230a763baa4fcf1b8b1571aa7b09072257e0a1436f914211c.png",
+      "snippet": "Celebrating 30 years of Feline Exclusive Veterinary Care · Dental Care · Surgeries · Vaccinations · Hospitalization · Grooming · Ultrasound · Routine Exams.",
+      "snippet_highlighted_words": [
+        "Dental Care"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Meet Our Team",
+            "link": "https://www.justcatsvet.com/meet-our-team"
+          },
+          {
+            "title": "Contact Us",
+            "link": "https://www.justcatsvet.com/contact-us"
+          },
+          {
+            "title": "Make An Appointment",
+            "link": "https://www.justcatsvet.com/appointments"
+          },
+          {
+            "title": "Emergency and Urgent Care",
+            "link": "https://www.justcatsvet.com/emergency-and-urgent-care"
+          }
+        ]
+      },
+      "source": "Just Cats Veterinary Clinic"
+    }
+  ],
+  "filters": [
+    {
+      "name": "Open now",
+      "parameters": {
+        "uds": "AOm0WdE2fekQnsyfYEw8JPYozOKz_1ngIna2uLTix4dsLDa0Qp4C2QVJ7uhHCgyL--6c61EusIKjYhrwPURctk4HZEEhiqA9dARAwr9QflAIchLgtIn64Lp_XT3k-wA9LldguV4ucOrBwiLxGs4AaqPiWXSRb3ZnwkuNxNw1Qy7aEKx7NvW2B3HmK1L6O2X6ZPEN29ks_V6r",
+        "q": "vet clinic open now"
+      },
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=vet+clinic+open+now&uds=AOm0WdE2fekQnsyfYEw8JPYozOKz_1ngIna2uLTix4dsLDa0Qp4C2QVJ7uhHCgyL--6c61EusIKjYhrwPURctk4HZEEhiqA9dARAwr9QflAIchLgtIn64Lp_XT3k-wA9LldguV4ucOrBwiLxGs4AaqPiWXSRb3ZnwkuNxNw1Qy7aEKx7NvW2B3HmK1L6O2X6ZPEN29ks_V6r&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQxKsJKAB6BAgXEAE&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic+open+now&uds=AOm0WdE2fekQnsyfYEw8JPYozOKz_1ngIna2uLTix4dsLDa0Qp4C2QVJ7uhHCgyL--6c61EusIKjYhrwPURctk4HZEEhiqA9dARAwr9QflAIchLgtIn64Lp_XT3k-wA9LldguV4ucOrBwiLxGs4AaqPiWXSRb3ZnwkuNxNw1Qy7aEKx7NvW2B3HmK1L6O2X6ZPEN29ks_V6r"
+    },
+    {
+      "name": "Top rated",
+      "parameters": {
+        "uds": "AOm0WdE2fekQnsyfYEw8JPYozOKzw2lL0jXGo9ZPlXvLd2feLF-bdPv-6P8phwQVcsOclieTG-GO4EGHh92oKaztNJcb53JJ2JdyZGmElP7mEvkBHt3a6SASmhdwqJtfvrNqcJu8WuupusmdB1qq0h1qiS29FVIXhCrdUZ0nFYwD938kQC9DEs8JOebeMmMK2Lgz26vtfqua",
+        "q": "top rated vet clinic"
+      },
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=top+rated+vet+clinic&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzw2lL0jXGo9ZPlXvLd2feLF-bdPv-6P8phwQVcsOclieTG-GO4EGHh92oKaztNJcb53JJ2JdyZGmElP7mEvkBHt3a6SASmhdwqJtfvrNqcJu8WuupusmdB1qq0h1qiS29FVIXhCrdUZ0nFYwD938kQC9DEs8JOebeMmMK2Lgz26vtfqua&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQxKsJKAF6BAgdEAE&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=top+rated+vet+clinic&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzw2lL0jXGo9ZPlXvLd2feLF-bdPv-6P8phwQVcsOclieTG-GO4EGHh92oKaztNJcb53JJ2JdyZGmElP7mEvkBHt3a6SASmhdwqJtfvrNqcJu8WuupusmdB1qq0h1qiS29FVIXhCrdUZ0nFYwD938kQC9DEs8JOebeMmMK2Lgz26vtfqua"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Vet clinic near me",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Vet+clinic+near+me&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Vet+clinic+near+me"
+    },
+    {
+      "block_position": 1,
+      "query": "Free vet clinic",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Free+vet+clinic&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhMEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Free+vet+clinic"
+    },
+    {
+      "block_position": 1,
+      "query": "Vet Troy, NY",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Vet+Troy,+NY&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhLEAE",
+      "serpapi_link": "httpsS://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Vet+Troy%2C+NY"
+    },
+    {
+      "block_position": 1,
+      "query": "Brunswick vet Clinic",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Brunswick+vet+Clinic&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Brunswick+vet+Clinic"
+    },
+    {
+      "block_position": 1,
+      "query": "Troy vet Clinic",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Troy+vet+Clinic&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Troy+vet+Clinic"
+    },
+    {
+      "block_position": 1,
+      "query": "Vets Albany, NY",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Vets+Albany,+NY&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Vets+Albany%2C+NY"
+    },
+    {
+      "block_position": 1,
+      "query": "Guilderland Tractor Supply vet clinic",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Guilderland+Tractor+Supply+vet+clinic&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Guilderland+Tractor+Supply+vet+clinic"
+    },
+    {
+      "block_position": 1,
+      "query": "Miller Animal Hospital Troy, NY",
+      "link": "https://www.google.com/search?sca_esv=7f99260b855e4778&hl=en&gl=us&q=Miller+Animal+Hospital+Troy,+NY&sa=X&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=Miller+Animal+Hospital+Troy%2C+NY"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=10&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=10&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=20&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=30&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=40&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=50&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=60&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=70&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=80&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=vet+clinic&sca_esv=7f99260b855e4778&hl=en&gl=us&ei=6jUZaY-OMIv9kPIP1Yaq4Qg&start=90&sa=N&sstk=Af77f_fSQeW8bowXMf1QC7aZQKhx84a4Nlw5SCDh2f_LianEswc6mZbGm0Y9GncmAFXFsInE4r7XVoLH4Pzx_Bea0dM0Ow13N_DxYg&ved=2ahUKEwiPq9f3zvWQAxWLPkQIHVWDKowQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=30",
+      "5": "httpsD://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=70",
+"9":
+"https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=80",
+"10":
+"https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=Troy%2C+New+York%2C+United+States&q=vet+clinic&start=90"
+        }
+    }
+}
