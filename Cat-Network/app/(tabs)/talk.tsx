@@ -153,46 +153,11 @@ const CommunityScreen: React.FC = () => {
           </View>
         </ScrollView>
       </View>
-
-      {/* Bottom nav bar */}
-      <BottomNavbar />
     </View>
   );
 };
 
 export default CommunityScreen;
-
-/* ---------- Bottom navbar ---------- */
-
-const BottomNavbar: React.FC = () => {
-  return (
-    <View style={styles.navWrapper}>
-      <View style={styles.navBar}>
-        <NavItem icon="map" label="Map" />
-        <NavItem icon="shuffle" label="Shuffle" />
-        <View style={{ width: 72 }} />
-        <NavItem icon="chatbubbles" label="Talk" />
-        <NavItem icon="person" label="Profile" />
-      </View>
-
-      <TouchableOpacity style={styles.centerButton}>
-        <LinearGradient
-          colors={["#48ff6c", "#0fa835"]}
-          style={styles.centerInner}
-        >
-          <Text style={styles.plus}>+</Text>
-        </LinearGradient>
-      </TouchableOpacity>
-    </View>
-  );
-};
-
-const NavItem = ({ icon, label }: { icon: any; label: string }) => (
-  <TouchableOpacity style={styles.navItem}>
-    <Ionicons name={icon} size={24} color="#0b7a23" />
-    <Text style={styles.navLabel}>{label}</Text>
-  </TouchableOpacity>
-);
 
 /* ---------- styles ---------- */
 
@@ -326,4 +291,102 @@ const styles = StyleSheet.create({
   },
   actionsGroup: {
     flexDirection: "row",
-    alig
+    alignItems: "center",
+  },
+
+  replyBox: {
+    marginTop: 8,
+    paddingTop: 6,
+  },
+  replyHeader: {
+    fontSize: 12,
+    color: "#3b5a6e",
+    marginBottom: 4,
+  },
+  replyInput: {
+    height: 40,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "#c3d8e8",
+    backgroundColor: "rgba(255,255,255,0.9)",
+  },
+  pagination: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 8,
+  },
+  pageBtn: {
+    width: 16,
+    height: 16,
+    borderRadius: 3,
+    borderWidth: 1,
+    borderColor: "#9bb4c9",
+    marginHorizontal: 3,
+    backgroundColor: "#f0f6fb",
+  },
+
+  /* navbar */
+  navWrapper: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 0,
+    alignItems: "center",
+  },
+  navBar: {
+    height: 72,
+    width: "100%",
+    backgroundColor: "rgba(236,241,245,0.98)",
+    borderTopLeftRadius: 18,
+    borderTopRightRadius: 18,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "flex-end",
+    paddingHorizontal: 12,
+    paddingBottom: 6,
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: -3 },
+    elevation: 12,
+  },
+  navItem: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  navLabel: {
+    fontSize: 11,
+    color: "#0b7a23",
+    marginTop: 2,
+  },
+
+  centerButton: {
+    position: "absolute",
+    bottom: 26,
+    width: 78,
+    height: 78,
+    borderRadius: 39,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#0c8f2a",
+    shadowColor: "#000",
+    shadowOpacity: 0.35,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 18,
+  },
+  centerInner: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    borderWidth: 3,
+    borderColor: "#ffffff",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  plus: {
+    fontSize: 40,
+    color: "#ffffff",
+    marginTop: -2,
+  },
+});
