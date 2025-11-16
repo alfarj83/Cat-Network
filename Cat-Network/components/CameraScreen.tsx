@@ -1,219 +1,248 @@
-import React from "react";
-import {
-  View,
-  Text,
-  ImageBackground,
-  TouchableOpacity,
-  StyleSheet,
-} from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
+import { CameraView, useCameraPermissions } from "expo-camera";
+import { LinearGradient } from "expo-linear-gradient";
+import { Svg, Circle, Defs, RadialGradient, Stop, Polygon } from 'react-native-svg';
+import { BlurView } from 'expo-blur';
+import { Ionicons } from "@expo/vector-icons";
 
-export default function CameraScreen() {
-  return (
-    <View style={styles.root}>
-      <ImageBackground
-        source={require("../assets/images/kitty.jpg")} // replace with your image uri
-        style={styles.bg}
-        resizeMode="cover"
-      >
-
-        {/* Top Bar */}
-        <View style={styles.topBar}>
-          <TouchableOpacity style={styles.topButton}>
-            <Text style={styles.btnIcon}>◀</Text>
-          </TouchableOpacity>
-
-          <View style={styles.centerDot} />
-
-          <View style={styles.topButton} />
-        </View>
-
-        {/* Scanner Frame */}
-        <View style={styles.scanner}>
-          <View style={[styles.corner, styles.tl]} />
-          <View style={[styles.corner, styles.tr]} />
-          <View style={[styles.corner, styles.bl]} />
-          <View style={[styles.corner, styles.br]} />
-
-          <View style={styles.middleBar} />
-        </View>
-
-        {/* Info Card */}
-        <View style={styles.card}>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.cardTitle}>Kitty Cat</Text>
-            <Text style={styles.cardSub}>Common house cat</Text>
-          </View>
-
-          <TouchableOpacity style={styles.goBtn}>
-            <Text style={styles.goText}>➜</Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* Capture Button */}
-        <TouchableOpacity style={styles.captureOuter}>
-          <View style={styles.captureInner} />
-        </TouchableOpacity>
-      </ImageBackground>
-    </View>
-  );
+// Define the interface for the props
+interface InfoBoxProps {
+  title: string;
+  subtitle: string;
+  onPress: () => void;
 }
 
+const InfoBox: React.FC<InfoBoxProps> = ({ title, subtitle, onPress }) => {
+  return (
+     <LinearGradient
+      colors={["rgba(255,255,255,0.95)", "rgba(255,255,255,0.75)"]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0, y: 1 }}
+      style={styles.card}
+    >
+      <View style={styles.textContainer}>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.subtitle}>{subtitle}</Text>
+      </View>
+
+      <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
+        <LinearGradient
+          colors={["#b9ffcf", "#02b749"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={styles.buttonOuter}
+        >
+          <LinearGradient
+            colors={["#f5fff9", "#28c74f"]}
+            start={{ x: 0.1, y: 0.1 }}
+            end={{ x: 0.9, y: 0.9 }}
+            style={styles.buttonInner}
+          >
+            <Ionicons name="arrow-forward" size={20} color="white" />
+          </LinearGradient>
+        </LinearGradient>
+      </TouchableOpacity>
+    </LinearGradient>
+  );
+};
+
+export default function CameraScreen() {
+  const [permission, requestPermission] = useCameraPermissions();
+  const cameraRef = useRef<CameraView>(null);
+  const [classify, setClassify] = useState<boolean>(false)
+
+  if (!permission) {
+    return <View />;
+  }
+
+  // If permission was denied
+  if (!permission.granted) {
+    return (
+      <View style={styles.center}>
+        <Text style={styles.text}>We need your permission to use the camera</Text>
+        <Button title="Grant Permission" onPress={requestPermission} />
+      </View>
+    );
+  }
+
+  const takePhoto = async () => {
+    if (!cameraRef.current) return;
+
+    const photo = await cameraRef.current.takePictureAsync({
+      quality: 0.8,
+      base64: false,
+    });
+
+    console.log("Photo:", photo);
+    setClassify(!classify)
+  };
+
+  return (
+    <View style={styles.container}>
+      <CameraView style={styles.camera} ref={cameraRef} facing="back" />
+
+      {/* overlays */}
+      <View style={styles.overlay} pointerEvents="box-none">
+
+        {/* Back button */}
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.8}>
+            <BlurView intensity={40} tint="dark" style={styles.circleBlur}>
+              <Ionicons name="chevron-back" size={24} color="#ffffff" />
+            </BlurView>
+          </TouchableOpacity>
+
+        {/* scan frame */}
+        <View style={styles.frame} />
+
+        {/* info card example */}
+        {classify && <InfoBox
+          title="Kitty Cat"
+          subtitle="Common house cat"
+          onPress={() => console.log('View Kitty Cat details!')}
+        />}
+
+        {/* bottom bar */}
+        <View style={styles.bottomBar}>
+          {/* left/right icons would go here */}
+
+          {/* shutter button */}
+          <TouchableOpacity onPress={takePhoto} style={styles.shutterOuter}>
+            <View style={styles.shutterInner} />
+          </TouchableOpacity>
+
+          {/* profile icon etc. */}
+        </View>
+      </View>
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: "#000" },
-  bg: { flex: 1 },
-
-  /* TOP BAR */
-  topBar: {
+  container: {
+    flex: 1,
+    backgroundColor: "#000",
+  },
+  camera: {
+    flex: 1,
+  },
+  controls: {
     position: "absolute",
-    top: 40,
-    left: 16,
-    right: 16,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  topButton: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: "rgba(0,0,0,0.35)",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  btnIcon: { color: "#fff", fontSize: 18 },
-  centerDot: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: "rgba(255,255,255,0.25)",
-  },
-
-  /* SCANNER */
-  scanner: {
-    position: "absolute",
-    top: "18%",
-    left: "8%",
-    right: "8%",
-    height: "55%",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  corner: {
-    position: "absolute",
-    width: 52,
-    height: 52,
-    borderColor: "#fff",
-  },
-  tl: {
-    top: 0,
-    left: 0,
-    borderTopWidth: 5,
-    borderLeftWidth: 5,
-    borderTopLeftRadius: 18,
-  },
-  tr: {
-    top: 0,
-    right: 0,
-    borderTopWidth: 5,
-    borderRightWidth: 5,
-    borderTopRightRadius: 18,
-  },
-  bl: {
-    bottom: 0,
-    left: 0,
-    borderBottomWidth: 5,
-    borderLeftWidth: 5,
-    borderBottomLeftRadius: 18,
-  },
-  br: {
-    bottom: 0,
-    right: 0,
-    borderBottomWidth: 5,
-    borderRightWidth: 5,
-    borderBottomRightRadius: 18,
-  },
-
-  middleBar: {
+    bottom: 40,
     width: "100%",
-    height: 95,
-    backgroundColor: "rgba(255,255,255,0.8)",
-    borderRadius: 22,
-  },
-
-  /* INFO CARD */
-  card: {
-    position: "absolute",
-    left: 16,
-    right: 16,
-    bottom: 140,
-    paddingVertical: 14,
-    paddingHorizontal: 18,
-    backgroundColor: "rgba(255,255,255,0.93)",
-    borderRadius: 15,
-    flexDirection: "row",
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOpacity: 0.25,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 6,
-  },
-  cardTitle: { fontSize: 18, fontWeight: "600", color: "#222" },
-  cardSub: { fontSize: 13, color: "#666", marginTop: 2 },
-  goBtn: {
-    width: 35,
-    height: 35,
-    marginLeft: 12,
-    borderRadius: 18,
-    backgroundColor: "#3ccf5a",
-    justifyContent: "center",
     alignItems: "center",
   },
-  goText: { color: "#fff", fontSize: 20 },
-
-  /* CAPTURE BUTTON */
-  captureOuter: {
-    position: "absolute",
-    bottom: 75,
-    alignSelf: "center",
-    width: 74,
-    height: 74,
-    borderRadius: 37,
-    borderWidth: 4,
-    borderColor: "#fff",
-    backgroundColor: "rgba(255,255,255,0.25)",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  captureInner: {
-    width: 54,
-    height: 54,
-    borderRadius: 27,
+  captureButton: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
     backgroundColor: "#fff",
   },
-
-  /* BOTTOM BAR */
-  bottomBar: {
+  center: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    marginBottom: 12,
+  },
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: "space-between",
+    paddingBottom: 40,
+    paddingTop: 60,
+  },
+  frame: {
+    alignSelf: "center",
+    width: "75%",
+    height: "40%",
+    borderRadius: 24,
+    borderWidth: 4,
+    borderColor: "white",
+  },
+  infoCard: {
     position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: 75,
-    paddingHorizontal: 10,
-    backgroundColor: "rgba(240,240,240,0.95)",
+    alignSelf: "center",
+    top: "55%",
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.9)",
+  },
+  infoTitle: { fontWeight: "bold", fontSize: 16 },
+  infoSubtitle: { fontSize: 12 },
+  bottomBar: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  shutterOuter: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    borderWidth: 6,
+    borderColor: "white",
+    justifyContent: "center",
     alignItems: "center",
   },
-  bottomItem: { alignItems: "center" },
-  bottomIcon: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    borderWidth: 2,
-    borderColor: "#38c85a",
-    marginBottom: 3,
+  shutterInner: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: "white",
   },
-  bottomLabel: { fontSize: 11, color: "#444" },
+  card: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+    borderRadius: 18,
+    overflow: "hidden",
+    // soft shadow
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 5,
+  },
+  textContainer: {
+    flex: 1,
+    paddingRight: 10,
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#222",
+  },
+  subtitle: {
+    fontSize: 12,
+    color: "#555",
+    marginTop: 2,
+  },
+  buttonOuter: {
+    padding: 3,
+    borderRadius: 22,
+  },
+  buttonInner: {
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  backButton: {
+    position: "absolute",
+    top: 40,
+    left: 18,
+  },
+  circleBlur: {
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+  },
 });
+
+

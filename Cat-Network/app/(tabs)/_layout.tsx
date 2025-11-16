@@ -48,6 +48,24 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+      name="create"
+      options={{
+        title: '',
+        tabBarLabel: '',
+        tabBarItemStyle: {
+          top: -25,
+        },
+        tabBarIcon: ({ color }) => <Image
+          source={require('../../assets/images/button_create.png')} // 3. Use 'require()' for the source
+          style={{
+            width: '350%',  // 4. You must set width and height for local images
+            height: '350%',
+          }}
+          resizeMode="contain"
+        />,
+      }}
+      />
+      <Tabs.Screen
       name="talk"
       options={{
         title: 'Talk',

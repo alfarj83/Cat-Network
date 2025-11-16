@@ -1,28 +1,26 @@
 import { View, StyleSheet} from 'react-native';
 import CameraScreen from '@/components/CameraScreen';
 import MapScreen from '@/components/Map';
+import KittyInfoCard from '@/components/KittyInfoCard';
+import React from 'react';
+import MapView from 'react-native-maps';
 
 export default function HomeScreen() {
   return (
-    <CameraScreen/>
+    <View style={styles.container}>
+      <MapView style={styles.map} />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+  container: {
+    flex: 1,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  map: {
+    width: '100%',
+    height: '100%',
   },
 });
+
+//<KittyInfoCard title="" subtitle="" description="" tags={["hello", "hi"]}/>
