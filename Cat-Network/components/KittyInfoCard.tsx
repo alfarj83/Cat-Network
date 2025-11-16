@@ -1,5 +1,6 @@
 // CatDetailsScreen.tsx
 import React from "react";
+import { useRouter } from "expo-router";
 import {
   View,
   Text,
@@ -12,6 +13,19 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 
 const KittyInfoCard: React.FC = () => {
+  const router = useRouter();
+
+  function navigateToCamera() {
+    router.push('/create');
+  }
+
+  const CircleIcon = ({ icon }: { icon: keyof typeof Ionicons.glyphMap }) => (
+    <TouchableOpacity activeOpacity={0.8} onPress={() => navigateToCamera()}>
+      <View style={styles.circleButton}>
+        <Ionicons name={icon} size={22} color="#ffffff" />
+      </View>
+    </TouchableOpacity>
+  );
   return (
     <View style={styles.root}>
       {/* top gradient background */}
@@ -31,7 +45,7 @@ const KittyInfoCard: React.FC = () => {
         <View style={styles.catContainer}>
           <View style={styles.greenShape}>
             <Image
-              source={require("./assets/cat.jpg")}
+              source={require("../assets/images/kitty 1.png")}
               style={styles.catImage}
               resizeMode="cover"
             />
@@ -56,43 +70,32 @@ const KittyInfoCard: React.FC = () => {
       </LinearGradient>
 
       {/* scrollable bottom card */}
-      <ScrollView
-        style={styles.bottomWrapper}
-        contentContainerStyle={styles.bottomContent}
-      >
-        <View style={styles.aboutHeader}>
-          <Text style={styles.aboutHeaderText}>About this Animal</Text>
+      <View style={styles.infoBox}>
+        <View style={styles.infoHeader}>
+          <Text style={styles.infoHeaderText}>About this Animal</Text>
         </View>
 
-        <View style={styles.card}>
-          <Text style={styles.title}>Basic House Cat</Text>
-          <Text style={styles.subtitle}>Feline kitty</Text>
+        <View style={styles.infoBody}>
+          <Text style={styles.infoTitle}>Basic House Cat</Text>
+          <Text style={styles.infoSubtitle}>Feline kitty</Text>
 
-          <Text style={styles.body}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+          <Text style={styles.infoText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi.
           </Text>
 
-          <Text style={styles.tagsLabel}>Tags</Text>
+          <Text style={styles.infoTagsLabel}>Tags</Text>
           <View style={styles.tagsRow}>
             <View style={styles.tagPill}>
               <Text style={styles.tagText}># kitty</Text>
             </View>
           </View>
         </View>
-      </ScrollView>
+      </View>
     </View>
   );
 };
-
-const CircleIcon = ({ icon }: { icon: keyof typeof Ionicons.glyphMap }) => (
-  <TouchableOpacity activeOpacity={0.8}>
-    <View style={styles.circleButton}>
-      <Ionicons name={icon} size={22} color="#ffffff" />
-    </View>
-  </TouchableOpacity>
-);
 
 export default KittyInfoCard;
 
@@ -220,19 +223,67 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     marginBottom: 6,
   },
+  infoBox: {
+    marginHorizontal: 16,
+    marginTop: 16,
+    backgroundColor: "#2f5e8c",     // blue frame color
+    borderRadius: 4,
+    padding: 4,                     // thickness of blue border
+  },
+  infoHeader: {
+    backgroundColor: "#2f5e8c",
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderTopLeftRadius: 2,
+    borderTopRightRadius: 2,
+    alignSelf: "flex-start",
+    marginBottom: 4,
+  },
+  infoHeaderText: {
+    color: "#ffffff",
+    fontSize: 12,
+    fontWeight: "500",
+  },
+  infoBody: {
+    backgroundColor: "#ffffff",
+    borderRadius: 2,
+    padding: 12,
+  },
+  infoTitle: {
+    fontSize: 20,
+    fontWeight: "700",
+    marginBottom: 4,
+    color: "#000",
+  },
+  infoSubtitle: {
+    fontSize: 15,
+    color: "#222",
+    marginBottom: 10,
+  },
+  infoText: {
+    fontSize: 13,
+    color: "#333",
+    lineHeight: 18,
+    marginBottom: 16,
+  },
+  infoTagsLabel: {
+    fontSize: 13,
+    fontWeight: "700",
+    marginBottom: 6,
+  },
   tagsRow: {
     flexDirection: "row",
     flexWrap: "wrap",
   },
   tagPill: {
-    backgroundColor: "#e4ffe9",
-    borderRadius: 16,
+    backgroundColor: "#8ff27c",
     paddingHorizontal: 10,
     paddingVertical: 4,
+    borderRadius: 14,
   },
   tagText: {
-    color: "#33b44b",
+    color: "#146b1e",
     fontSize: 12,
-    fontWeight: "500",
+    fontWeight: "600",
   },
 });

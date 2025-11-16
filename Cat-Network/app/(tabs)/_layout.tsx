@@ -1,8 +1,5 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Image } from 'react-native';
 
 export default function TabLayout() {
@@ -11,7 +8,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarButton: HapticTab,
+        //tabBarButton: HapticTab,
 
         // Add these lines to change the height
       tabBarStyle: {
@@ -91,6 +88,12 @@ export default function TabLayout() {
         />,
       }}
     />
+    <Tabs.Screen
+        name="card"
+        options={{
+          href: null,
+        }}
+      />
     </Tabs>
   );
 }

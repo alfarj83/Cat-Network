@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useRouter } from "expo-router";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
 import { CameraView, useCameraPermissions } from "expo-camera";
 import { LinearGradient } from "expo-linear-gradient";
@@ -51,6 +52,7 @@ export default function CameraScreen() {
   const [permission, requestPermission] = useCameraPermissions();
   const cameraRef = useRef<CameraView>(null);
   const [classify, setClassify] = useState<boolean>(false)
+  const router = useRouter();
 
   if (!permission) {
     return <View />;
@@ -78,6 +80,14 @@ export default function CameraScreen() {
     setClassify(!classify)
   };
 
+  function navigatetoMap() {
+    router.back();
+  }
+
+  function navigatetoCatInfo() {
+    router.push('/card')
+  }
+
   return (
     <View style={styles.container}>
       <CameraView style={styles.camera} ref={cameraRef} facing="back" />
@@ -86,7 +96,7 @@ export default function CameraScreen() {
       <View style={styles.overlay} pointerEvents="box-none">
 
         {/* Back button */}
-        <TouchableOpacity style={styles.backButton} activeOpacity={0.8}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.8} onPress={() => navigatetoMap()}>
             <BlurView intensity={40} tint="dark" style={styles.circleBlur}>
               <Ionicons name="chevron-back" size={24} color="#ffffff" />
             </BlurView>
@@ -99,7 +109,7 @@ export default function CameraScreen() {
         {classify && <InfoBox
           title="Kitty Cat"
           subtitle="Common house cat"
-          onPress={() => console.log('View Kitty Cat details!')}
+          onPress={() => navigatetoCatInfo()}
         />}
 
         {/* bottom bar */}

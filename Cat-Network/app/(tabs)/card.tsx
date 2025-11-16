@@ -3,9 +3,7 @@ import KittyInfoCard from "@/components/KittyInfoCard";
 import { useEffect, useState} from 'react'
 
 export default function CreateScreen() {
-    const [showInfo, setShowInfo] = useState<boolean>(false)
-
     return (
-        <CameraScreen/>
+        <KittyInfoCard/>
     );
 }
