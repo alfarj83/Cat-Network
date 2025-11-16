@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import MapView from 'react-native-maps';
 import { StyleSheet, View, PermissionsAndroid, Platform } from 'react-native';
-import Geolocation from 'react-native-geolocation-service';
+import * as Location from 'expo-location';
 
 interface UserRegion {
     latitude: number,
@@ -28,24 +28,27 @@ const requestLocationPermission = async () => {
     }
 }
 
-const getCurrentLocation = () => {
-    return new Promise((resolve, reject) => {
-    Geolocation.getCurrentPosition(
-        (position) => {
-        resolve({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-        });
-        },
-        (error) => {
-        reject(error);
-        },
-        { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
-    );
-    });
+const getCurrentLocation = async () => {
+  // 1. Request permission
+  let { status } = await Location.requestForegroundPermissionsAsync();
+  if (status !== 'granted') {
+    // Handle permission denied
+    throw new Error('Permission to access location was denied');
+  }
+
+  // 2. Get the location
+  let position = await Location.getCurrentPositionAsync({
+    accuracy: Location.Accuracy.High, // Use high accuracy
+  });
+
+  // 3. Return the object
+  return {
+    latitude: position.coords.latitude,
+    longitude: position.coords.longitude,
+  };
 };
 
-export default function Map() {
+export default function MapScreen() {
     const mapRef = useRef<MapView>(null);
     const [initialRegion, setInitialRegion] = useState<UserRegion>({
         latitude: 0,
